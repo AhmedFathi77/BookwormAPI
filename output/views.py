@@ -11,8 +11,6 @@ import pytesseract
 from PIL import Image
 import json
 from imgConversion import EncodeImg , DecodeImg
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
 
 from Processing import *
 
