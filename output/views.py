@@ -5,7 +5,7 @@ import base64
 import cv2
 import numpy as np
 import os
-import argparse
+#import argparse
 #from tkinter import *
 import pytesseract
 from PIL import Image
