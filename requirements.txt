@@ -3,7 +3,7 @@ django-cors-headers==2.5.3
 djangorestframework==3.9.2
 gunicorn==19.9.0
 numpy==1.16.2
-python3-tk 
+python3.6-tk
 django-heroku
 opencv-python-headless
 pytesseract
