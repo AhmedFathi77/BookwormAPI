@@ -18,6 +18,7 @@ from Processing import *
 class ProcessAPI(APIView):
     def post(self,request):
         string=request.data["img"]
+        name=request.data["name"]
         string = string.replace('\n', '')
         EncodeImg('picrb01.jpg')
         DecodeImg(string)
@@ -25,6 +26,6 @@ class ProcessAPI(APIView):
         arabic_processed=arabic_processing(arabic01,False)
         # print(img)
         # return Response(file_serializer.data, status=status.HTTP_201_CREATED)
-        return Response('Done',status=status.HTTP_200_OK)
+        return Response(name + ' Done',status=status.HTTP_200_OK)
 
 
