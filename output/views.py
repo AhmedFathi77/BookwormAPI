@@ -24,8 +24,6 @@ class ProcessAPI(APIView):
         DecodeImg(string)
         arabic01 = cv2.imread('some_image.jpg',1)
         arabic_processed=arabic_processing(arabic01,False)
-        # print(img)
-        # return Response(file_serializer.data, status=status.HTTP_201_CREATED)
-        return Response(name + ' Done',status=status.HTTP_200_OK)
-
+        y = {"data": name}
+        return Response(y,status=status.HTTP_200_OK)
 
